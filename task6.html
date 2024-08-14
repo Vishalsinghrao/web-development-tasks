@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Zomato</title>
+    <style>
+        .zom{
+            margin: 0;
+        }
+        h1{
+            position: absolute;
+            top: 6px;
+            left: 45vw;
+            z-index: 1;
+            color: white;
+        }
+        h3{
+            position: absolute;
+            top: 60px;
+            left: 35vw;
+            z-index: 1;
+            color: white;
+        }
+        #location{
+            padding: 5px;
+            padding-left: 20px;
+            position: absolute;
+            height: 25px;
+            top: 140px;
+            left: 35vw;
+            z-index: 1;
+            color: black;
+            
+        }
+        i{
+            position: absolute;
+            color: black;
+            left: 65vh;
+            top: 23vh;
+            z-index: 1;
+        }
+        #search{
+            padding: 5px;
+            padding-left: 40px;
+            
+            position: absolute;
+            top: 140px;
+            width: 150px;
+            left: 45vw;
+            z-index: 1;
+            color: white;
+        }
+        #sign{
+            position: absolute;
+            left: 46vw;
+            color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <img class="zom" src="food.png" alt="zomato" height="200px" width="100%">
+    <span>
+        <h1>zomato</h1>
+        <h3>Discover the best food & drinks in rajasthan</h3>
+        <for>
+        <select name="location" id="location">location
+         <option value="udaipur">location</option>
+            <option value="udaipur">udaipur</option>
+            <option value="jaipur">jaipur</option>
+            <option value="jaisalmer">jaisalmer</option>
+            <option value="kota">kota</option>
+        </select>
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" name="search" id="search" placeholder="select the restaurent">
+        <i id="sign" class="fa-solid fa-magnifying-glass"></i></form>
+    </span>
+</body>
+</html>
