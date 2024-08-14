@@ -67,7 +67,7 @@ a {
 .card {
     position: absolute;
     z-index: 1;
-    top: 205vh;
+    top: 285vh;
     left: 28vw;
 }
 
@@ -82,9 +82,3 @@ h1,p,h4 {
 .end1 > h1{
     color: blue;
 }
-
-
-
-
-
-
