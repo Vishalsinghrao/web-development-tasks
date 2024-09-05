@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color on Hover</title>
+    <style>
+        /* Style the div */
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorBox">Hover over me!</div>
+
+    <script>
+
+        var colorBox = document.getElementById("colorBox");
+
+        colorBox.addEventListener("mouseenter", function() {
+            colorBox.style.backgroundColor = "blue";
+        });
+
+        colorBox.addEventListener("mouseleave", function() {
+            colorBox.style.backgroundColor = "lightgray";
+        });
+    </script>
+</body>
+</html>

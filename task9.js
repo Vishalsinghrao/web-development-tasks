@@ -74,4 +74,18 @@ function getDayType(dayNumber) {
 console.log(getDayType(2));
 
 
+function isEven(a) {
+    if (a == 0) {
+        return "number is zero";
+    } else if(a>0) {
+        return "number is positive";
+    }
+    else{
+        return "number is negative"
+    }
+}
+
+console.log(isEven(2));
+
+
 
