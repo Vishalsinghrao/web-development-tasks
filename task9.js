@@ -1,91 +1,75 @@
-function sayHello() {
-    return "Hello, World!";
-}
-console.log(sayHello());
+//
 
+// NOTE USE STRICT MODE;
 
-function doublenumber(a){
-    return a*2;
-}
-console.log(doublenumber(5));
+age = 5;
+console.log(age); // Output: 5
 
-function add(a,b){
-    return a+b;
-}
-console.log(add(5,4));
-
-const double = (a) => {
-    return a*2;
-}
-console.log(double(5));
-
-function subtractten(a){
-    return a-10;
-}
-console.log(subtractten(25));
-
-function isGreaterThanFive(a){
-    return a > 5  ? 'true' : 'false'
-}
-console.log(isGreaterThanFive(15));
-
-
-
-function isBetweenOneAndTen(a) {
-    return a >= 1 && a <= 10;
- }
- console.log(isBetweenOneAndTen(8));
-
-
-function isEven(a) {
-    if (a % 2 === 0) {
-        return "Even";
-    } else {
-        return "Odd";
-    }
+function sum(a,a,b){
+    return a+a+b;
 }
 
-console.log(isEven(8));
+console.log(sum(1,1,1));
+
+console.error("This is an error");
+console.warn("This is a warning");
+console.time('TImeStamp');
+console.log('Hello');
+console.timeEnd('TImeStamp');
+
+console.table("2,4,6");
+
+const fruits = [`Mango` , `54` , `True`];
+
+console.log(fruits)
+console.log(fruits[fruits.length-1]);
 
 
-function CheckAge(age){
-    return age > 18  ? 'Adult' : 'Minor'
+//PUSH METHOD ( IT MUTATES THE ORGINAL ARRAY)
+
+const pushOutput = fruits.push('blueberry');
+
+console.log(pushOutput);
+console.log(fruits);
+
+
+//POP method 
+
+const popOutput = fruits.pop();
+
+console.log(popOutput); // Output: 'blueberry' (the popped element)
+console.log(fruits); 
+
+
+//NOTE INCLUDE METHOD to check if element is there in array
+
+const includesOutput = fruits.includes(`Mango`);
+console.log(includesOutput);
+
+//key:value
+
+const myDetails = {
+    firstName : `Kartik`,
+    age : 20,
+
 }
 
-console.log(CheckAge(20));
+console.log(myDetails);
 
+//UPDATE THE DETAILS 
 
-function getDayType(dayNumber) {
-    switch (dayNumber) {
-        case 6:
-        case 7:
-            return "Weekend";
-        case 1:
-        case 2:
-        case 3:
-        case 4:
-        case 5:
-            return "Weekday";
-        default:
-            return "Invalid day number";
-    }
-}
+myDetails.firstName =`Kartikk-26`;
+myDetails.age = `21`;
+console.log(myDetails);
 
-console.log(getDayType(2));
+//DOT NOTATION
 
+console.log(myDetails.firstName);
+console.log(myDetails.age);
 
-function isEven(a) {
-    if (a == 0) {
-        return "number is zero";
-    } else if(a>0) {
-        return "number is positive";
-    }
-    else{
-        return "number is negative"
-    }
-}
-
-console.log(isEven(2));
-
+//BRACKET NOTATION ( we can dynamically pass the key by bracket notation)
+let a =`age`;
+console.log(myDetails['firstName']);
+console.log(myDetails[a]);
 
 

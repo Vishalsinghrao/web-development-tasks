@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Paragraph Text</title>
+</head>
+<body>
+    <p id="myParagraph">This is the original text.</p>
+    <button id="myButton">Change Text</button>
+
+    <script>
+        function changeText() {
+            var paragraph = document.getElementById("myParagraph");
+            paragraph.textContent = "The text has been changed!";
+        }
+
+        document.getElementById("myButton").addEventListener("click", changeText);
+    </script>
+</body>
+</html>

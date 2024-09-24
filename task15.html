@@ -3,30 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add List Item</title>
-</head>
-<body>
-    <ul id="myList">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
-    <button id="addButton">Add Item</button>
-
-    <script>
-        function addListItem() {
-        
-            var newItem = document.createElement("li");
-            newItem.textContent = "New Item";
-
-            
-            var list = document.getElementById("myList");
-            
-            list.appendChild(newItem);
+    <title>login page</title>
+    <style>
+        form{
+            box-sizing: border-box;
+            border: solid gray;
+            height: 340px;
+            width: 360px;
+            text-align: center;
+            margin-left: 200px;
+        }
+        h1,h5{
+            margin: 6px;
         }
 
+        .login{
+            border: 2px solid grey;
+            border-radius: 10px;
+            width: 200px;
+            height: 30px;
+            margin: 6px;
+            justify-content: center;
+            text-align: center;
+        }
+        button{
+            margin: 6px;
+            background-color: black;
+            color: white;
+            padding: 6px;
+            width: 150px;
+            border-radius: 20px;
+        }
+        h4{
+            margin: 4px;
+            display: inline-block;
+            color: gray;
+        }
+        a{
+            color: rgb(84, 77, 77);
+        }
+    </style>
+</head>
+<body>
+    <form class="container">
+    <h1>Flodesk</h1>
 
-        document.getElementById("addButton").addEventListener("click", addListItem);
-    </script>
+    <h5>Welcome back!</h5>
+
+    <input type="text" class="login" placeholder="Enter your email"><br>
+
+    <input type="text" class="login" placeholder="Enter your password"><br>
+    <button type="submit">Login to Flodesk</button>
+    <br>
+
+    <h4>Not a member ?&nbsp;</h4><a href="https://www.google.com">sign up</a><br>
+    <a href="https://www.google.com">Forgot your password</a>
+    <br>
+
+    <h4>By continuing you agree to Flodesk's <a href="https://www.facebook.com">term</a><br>
+    and acknowledge you've read our <a class="ack"    href="https://www.facebook.com">privacy policy</a></h4>
+    </form>
+
+
 </body>
 </html>

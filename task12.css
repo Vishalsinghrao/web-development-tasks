@@ -1,0 +1,35 @@
+body{
+    padding-left: 30%;
+    padding-right: 10%;
+
+    
+} 
+
+.box{
+    width: 500px;
+    height: 300px; 
+    padding: 190px; 
+    padding-left: 5%;
+    padding-right: 20%;
+    border: 2px solid lightgreen; 
+    border-radius: 10px; 
+    background-color: rgb(107, 205, 148); 
+    text-align: left;
+    font-size: 20px;
+   
+}
+h1{
+    font-size: 70px;
+}
+
+#share{
+    border: 2px white;
+    border-radius: 30px;
+    height: 50px;
+    width: 300px;
+}
+h3{
+    font-weight: bold;
+    font-size: 100%;
+}
+

@@ -1,100 +1,58 @@
-.container {
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    padding: 3px;
-    position: absolute;
-    height: 20px;
-    left: 15vw;
-    top: 10px;
-    gap: 3vw;
-}
-
-button {
-    display: flex;
-    padding: 3px;
-    position: absolute;
-    height: 2vh;
-    right: 5vw;
-    top: 2vh;
-    background-color: blue;
-    color: white;
-    border-radius: 30px;
-    padding: 15px;
-    align-items: center;
-    width: 15vh;
-    border: 1px solid blue;
-}
-
-.bg{
-    width: 96vw;
-    height: 70vh;
-}
-a {
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-}
-
-.center {
-
-    text-align: center;
-}
-
-.call {
-    position: absolute;
-    display: flex;
-    gap: 3vw;
-    margin: 10px;
-    text-align: center;
-
-}
-
-#img1 {
-    margin-top: 70vh;
-    margin-left: 2vw;
-
-}
-
-.bg{
-    margin: 5px;
-}
-.card-body {
-    background-color: rgb(101, 101, 217);
-    height: 23vh;
-    border-radius: 20px;
-
-}
-
-.card {
-    position: absolute;
-    z-index: 1;
-    top: 278vh;
-    left: 28vw;
-}
-
-h1,p,h4 {
-    margin: 20px;
-    
-}
-.end1{
-    text-align: center;
+    flex-direction: column;
     justify-content: center;
-}
-.end1 > h1{
-    color: blue;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    top: 50%; 
-    transform: translateY(-50%);
-    height: auto; 
+    align-items: center;
+    color: white;
+    text-align: center;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 2rem; /* Adjust the size of the arrow icon */
-    height: 2rem; /* Adjust the size of the arrow icon */
-    background-size: 100%, 100%; 
+h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
 }
 
+p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-input, .search-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.location-input {
+    width: 150px;
+}
+
+.search-input {
+    width: 300px;
+}
